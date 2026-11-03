@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>PT Krakatau Posco | Integrated Steel Mill Indonesia</title>
+  <meta name="description" content="Profil PT KRAKATAU POSCO (Persero) Tbk: sejarah, struktur perusahaan, produk baja, lokasi, dan kanal media sosial.">
+  <link href="assets/img/krakatau posco logo.jpg" rel="icon">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    :root{--ks-navy:#102b46;--ks-blue:#176b9a;--ks-orange:#e66b2e}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{color:#263746; transition: transform 0.3s ease; transform-origin: top center;}
+    .header{background:rgba(10,32,52,.96)}
+    .sitename{font-size:22px!important;font-weight:800;letter-spacing:.3px}
+    .sitename span{color:#f39a55}
+    .hero{background:linear-gradient(110deg,rgba(6,25,43,.94),rgba(11,65,96,.72)),url('assets/img/krakatau posco 1.jpg') center/cover}
+    
+    .hero .carousel-container{max-width:900px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;}
+    
+    .hero h2{font-size:clamp(32px,5vw,58px);line-height:1.15}
+    .hero p{max-width:760px;margin:22px auto}
+    .btn-ks{background:var(--ks-orange);border:0;color:white;padding:12px 25px;border-radius:5px;font-weight:700; transition: 0.3s;}
+    .btn-ks:hover{background:#c95420;color:white}
+    .section-title p{color:var(--ks-blue)}
+    .info-card,.product-card,.structure-card,.social-card{height:100%;background:#fff;border-radius:12px;padding:25px;box-shadow:0 8px 28px rgba(16,43,70,.09);transition:.25s}
+    .info-card:hover,.product-card:hover,.social-card:hover{transform:translateY(-5px)}
+    .info-card i,.social-card i{font-size:30px;color:var(--ks-orange)}
+    .timeline{border-left:3px solid #e9a06c;margin-left:12px;padding-left:24px}
+    .timeline-item{position:relative;margin-bottom:24px}
+    .timeline-item:before{content:"";position:absolute;left:-33px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--ks-orange);border:3px solid white;box-shadow:0 0 0 2px #e9a06c}
+    .timeline-year{font-weight:800;color:var(--ks-blue)}
+    .structure-card{text-align:center;border-top:4px solid var(--ks-blue)}
+    .structure-card.leader{background:var(--ks-navy);color:#fff;border-color:var(--ks-orange)}
+    .structure-card small{opacity:.8}
+    .structure-line{height:28px;width:2px;background:#b8c7d2;margin:auto}
+    .product-card{padding:0;overflow:hidden}
+    .product-card img{width:100%;height:205px;object-fit:cover}
+    .product-card .product-copy{padding:20px}
+    .product-card h4{color:var(--ks-navy)}
+    .map-frame{width:100%;height:390px;border:0;border-radius:12px}
+    .social-card a{color:var(--ks-blue);font-weight:700;text-decoration:none}
+    .section-soft{background:#f4f7fa}
+    .footer{background:#0d263d;color:#e6edf3}
+    .footer a{color:#f3a16a}
+    @media(max-width:767px){.hero{min-height:620px}.map-frame{height:300px}}
+    
+    .header-utils { display: flex; align-items: center; gap: 10px; margin-left: 20px; }
+    .btn-zoom { background: transparent; border: 1px solid #f39a55; color: #fff; padding: 4px 10px; border-radius: 4px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+    .btn-zoom:hover { background: #f39a55; color: #fff; }
+    
+    .lang-divider { width: 1px; height: 25px; background-color: rgba(255, 255, 255, 0.3); margin: 0 5px; }
+    .lang-btn {
+      background-color: #2b5082; 
+      color: #ffffff;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      padding: 0;
+    }
+    .lang-btn:hover { background-color: #1a335a; border-color: #f39a55; }
+
+    .org-chart-container { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+
+    .play-icon-custom {
+      color: rgba(255, 255, 255, 0.5); 
+      font-size: 5rem;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: all 0.3s ease;
+    }
+    .video-link:hover .play-icon-custom {
+      color: var(--ks-blue); 
+      transform: scale(1.15); 
+      text-shadow: 0 6px 15px rgba(23, 107, 154, 0.6);
+    }
+    .contact-details p { font-size: 0.9rem; margin-bottom: 0.5rem; }
+
+    .org-photo .carousel-inner {
+        background-color: #f8f9fa; 
+        border-radius: 12px;
+    }
+    .org-photo .carousel-item img {
+      max-height: 450px;
+      width: 100%;
+      object-fit: contain !important; 
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body class="index-page">
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <a href="#hero" class="logo d-flex align-items-center"><h1 class="sitename">KRAKATAU <span>POSCO</span></h1></a>
+    
+    <div class="d-flex align-items-center">
+      <nav id="navmenu" class="navmenu" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#hero" class="active">Beranda</a></li>
+          <li><a href="#tentang">Sejarah</a></li>
+          <li><a href="#struktur">Struktur</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#lokasi">Kontak & Lokasi</a></li>
+          <li><a href="#sosial">Sosial Media</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Buka menu"></i>
+      </nav>
+      
+      <div class="header-utils d-none d-lg-flex">
+        <button class="btn-zoom" onclick="zoomPage(-0.1)" title="Perkecil">A-</button>
+        <button class="btn-zoom" onclick="zoomPage(0.1)" title="Perbesar">A+</button>
+        
+        <div class="lang-divider"></div>
+        <button id="langToggle" class="lang-btn" onclick="toggleLanguage()">ID</button>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="main">
+
+  <section id="hero" class="hero section dark-background">
+    <div id="hero-carousel" data-bs-interval="6500" class="container carousel carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-item active"><div class="carousel-container">
+        <p class="animate__animated animate__fadeInDown text-uppercase fw-bold" style="letter-spacing:3px">Baja Indonesia, Kolaborasi Indonesia–Korea</p>
+        <h2 class="animate__animated animate__fadeInDown">PT <span>KRAKATAU POSCO</span></h2>
+        <p class="animate__animated animate__fadeInUp">Perusahaan patungan antara POSCO dan PT Krakatau Steel yang mengoperasikan pabrik baja terpadu di Cilegon, Banten.</p>
+        <a href="#tentang" class="btn-ks animate__animated animate__fadeInUp scrollto">Jelajahi Perusahaan</a>
+      </div></div>
+      <div class="carousel-item"><div class="carousel-container">
+        <p class="animate__animated animate__fadeInDown text-uppercase fw-bold" style="letter-spacing:3px">Pabrik Baja Terpadu</p>
+        <h2 class="animate__animated animate__fadeInDown">Teknologi <span>Blast Furnace</span></h2>
+        <p class="animate__animated animate__fadeInUp">Krakatau Posco mengembangkan fasilitas baja terpadu dengan teknologi blast furnace dan kapasitas produksi sekitar 3 juta ton per tahun.</p>
+        <a href="#produk" class="btn-ks animate__animated animate__fadeInUp scrollto">Lihat Produk</a>
+      </div></div>
+      <div class="carousel-item"><div class="carousel-container">
+        <p class="animate__animated animate__fadeInDown text-uppercase fw-bold" style="letter-spacing:3px">Berbasis di Cilegon</p>
+        <h2 class="animate__animated animate__fadeInDown">Improvement · Execution · Grow Together</h2>
+        <p class="animate__animated animate__fadeInUp">Kenali sejarah, organisasi, fasilitas, produk, dan lokasi PT Krakatau Posco melalui satu halaman informasi.</p>
+        <a href="#lokasi" class="btn-ks animate__animated animate__fadeInUp scrollto">Temukan Lokasi</a>
+      </div></div>
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev" aria-label="Slide sebelumnya"><span class="carousel-control-prev-icon bi bi-chevron-left"></span></a>
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next" aria-label="Slide berikutnya"><span class="carousel-control-next-icon bi bi-chevron-right"></span></a>
+    </div>
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none"><defs><path id="wave-path" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 58-18 88-18 58 18 88 18v44h-520z"/></defs><use xlink:href="#wave-path" x="50" y="0" fill="currentColor"/><use xlink:href="#wave-path" x="50" y="3" fill="currentColor"/><use xlink:href="#wave-path" x="50" y="6" fill="currentColor"/></svg>
+  </section>
+
+  <section id="tentang" class="about section">
+    <div class="container section-title" data-aos="fade-up"><h2>Tentang Kami</h2><p>Sejarah dan Profil Perusahaan</p></div>
+    <div class="container"><div class="row gy-4 align-items-center">
+      
+      <div class="col-lg-6" data-aos="zoom-in">
+        <div class="ratio ratio-16x9 rounded-3 shadow overflow-hidden" style="background-color: #000;">
+          <img src="https://img.youtube.com/vi/UylC4NJd3Rw/maxresdefault.jpg" alt="Video Profil Krakatau Posco" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
+          <a href="https://www.youtube.com/watch?v=UylC4NJd3Rw" target="_blank" rel="noopener" class="video-link d-flex align-items-center justify-content-center text-decoration-none" style="z-index: 2;">
+            <i class="bi bi-play-circle-fill play-icon-custom"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-6 content" data-aos="fade-left">
+        <h3>Perjalanan PT Krakatau Posco</h3>
+        <p>PT Krakatau Posco merupakan perusahaan patungan antara POSCO Korea dan PT Krakatau Steel yang berdiri di Cilegon, Banten. Perusahaan didirikan pada 26 Agustus 2010 untuk mengembangkan industri baja terpadu dengan menggabungkan pengalaman dan sumber daya Indonesia dengan teknologi serta kapabilitas industri baja Korea.</p>
+        <p>Pembangunan pabrik dimulai pada 2011 dan selesai dalam 36 bulan. PT Krakatau Posco mulai beroperasi secara resmi pada akhir 2013 dan memulai produksi komersial pada 2014.</p>
+        <ul>
+          <li data-aos="fade-up" data-aos-delay="100"><i class="bi bi-check2-circle"></i><span>Perusahaan patungan POSCO dan PT Krakatau Steel.</span></li>
+          <li data-aos="fade-up" data-aos-delay="200"><i class="bi bi-check2-circle"></i><span>Berlokasi di kawasan industri baja Cilegon, Banten.</span></li>
+          <li data-aos="fade-up" data-aos-delay="300"><i class="bi bi-check2-circle"></i><span>Mengoperasikan pabrik baja terpadu dengan teknologi blast furnace.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-5"><div class="col-lg-8 mx-auto"><div class="timeline">
+      <div class="timeline-item" data-aos="fade-up"><div class="timeline-year">2009</div><h5>MoA Krakatau Steel & POSCO</h5><p>Pada 2 Desember 2009, PT Krakatau Steel dan POSCO menandatangani Memorandum of Agreement.</p></div>
+      <div class="timeline-item" data-aos="fade-up"><div class="timeline-year">2010</div><h5>Pendirian PT Krakatau Posco</h5><p>JVA ditandatangani pada 4 Agustus 2010 dan PT Krakatau Posco resmi didirikan pada 26 Agustus 2010.</p></div>
+      <div class="timeline-item" data-aos="fade-up"><div class="timeline-year">2013</div><h5>Penyelesaian pabrik baja terpadu</h5><p>Pembangunan pabrik diselesaikan pada Desember 2013 dan first tapping blast furnace pada 29 Desember 2013.</p></div>
+      <div class="timeline-item" data-aos="fade-up"><div class="timeline-year">2014</div><h5>Produksi komersial</h5><p>PT Krakatau Posco memulai produksi dan pengiriman komersial perdana pada Januari 2014.</p></div>
+    </div></div></div></div>
+  </section>
+
+  <section id="struktur" class="section section-soft">
+    <div class="container section-title" data-aos="fade-up"><h2>Struktur Perusahaan</h2><p>Susunan Organisasi dan Manajemen</p></div>
+    <div class="container">
+      <p class="text-center mb-4" data-aos="fade-up">Struktur berikut menggambarkan tata kelola dan fungsi utama PT Krakatau Posco.</p>
+      
+      <div class="row justify-content-center" data-aos="zoom-in"><div class="col-md-5 col-lg-4"><div class="structure-card"><h5>Pemegang Saham</h5><p class="mb-1"><strong>POSCO</strong></p><small>50% kepemilikan</small><hr><p class="mb-1"><strong>PT Krakatau Steel</strong></p><small>50% kepemilikan</small></div></div></div>
+      <div class="structure-line" data-aos="fade-up"></div>
+      <div class="row justify-content-center" data-aos="zoom-in"><div class="col-md-5 col-lg-4"><div class="structure-card leader"><h5>Dewan Direksi</h5><p class="mb-1"><strong>President Director & Direksi</strong></p><small>Memimpin pengelolaan dan operasional perusahaan</small></div></div></div>
+      <div class="structure-line" data-aos="fade-up"></div>
+      <div class="row g-3">
+        <div class="col-md" data-aos="fade-up" data-aos-delay="100"><div class="structure-card"><h6>Ironmaking</h6><strong>Coke Plant · Sinter Plant · Blast Furnace</strong></div></div>
+        <div class="col-md" data-aos="fade-up" data-aos-delay="200"><div class="structure-card"><h6>Steelmaking</h6><strong>Steelmaking Plant · Continuous Casting</strong></div></div>
+        <div class="col-md" data-aos="fade-up" data-aos-delay="300"><div class="structure-card"><h6>Rolling</h6><strong>Plate Mill · Hot Rolling Plant</strong></div></div>
+        <div class="col-md" data-aos="fade-up" data-aos-delay="400"><div class="structure-card"><h6>Fungsi Pendukung</h6><strong>Finance · HR · Commercial · Safety</strong></div></div>
+      </div>
+      
+      <div class="text-center mb-4 mt-5" data-aos="fade-up">
+        <button onclick="downloadPDF()" class="btn-ks"><i class="bi bi-file-earmark-pdf"></i> Unduh Struktur (PDF)</button>
+      </div>
+
+      <div id="struktur-lengkap" class="org-chart-container mb-5 text-center" data-aos="zoom-in" data-aos-delay="200">
+        <h4 class="text-center mb-4" id="pdf-title" style="color: var(--ks-navy);">Struktur Grup Perusahaan Krakatau Steel</h4>
+        <img src="assets/img/Struktur Grup Perusahaan(6) krakatau steel.png" alt="Struktur Grup Perusahaan Krakatau Steel" class="img-fluid" style="max-width: 100%; height: auto; object-fit: contain;">
+      </div>
+
+      <figure class="org-photo mb-4 mt-5" data-aos="fade-up">
+        <div id="fasilitasCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#fasilitasCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#fasilitasCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#fasilitasCarousel" data-bs-slide-to="2"></button>
+          </div>
+          <div class="carousel-inner shadow-sm">
+            <div class="carousel-item active"><img src="assets/img/krakatau posco fasilitas 1.jpg" class="d-block w-100" alt="Fasilitas PT Krakatau Posco 1"></div>
+            <div class="carousel-item"><img src="assets/img/krakatau posco fasilitas 2.jpg" class="d-block w-100" alt="Fasilitas PT Krakatau Posco 2"></div>
+            <div class="carousel-item"><img src="assets/img/krakatau posco fasilitas 3.jpg" class="d-block w-100" alt="Fasilitas PT Krakatau Posco 3"></div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#fasilitasCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+          <button class="carousel-control-next" type="button" data-bs-target="#fasilitasCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+        </div>
+        <figcaption class="text-center mt-2 text-muted">Ilustrasi fasilitas dan produk PT Krakatau Posco.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="produk" class="services section">
+    <div class="container section-title" data-aos="fade-up"><h2>Produk</h2><p>Produk Baja PT Krakatau Posco</p></div>
+    <div class="container"><div class="row gy-4">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><article class="product-card"><img src="assets/img/Hot Rolled Coil (HRC).jpg" alt="Hot Rolled Coil PT Krakatau Posco"><div class="product-copy"><h4>Hot Rolled Coil</h4><p>Produk baja lembaran canai panas berbentuk gulungan untuk konstruksi, manufaktur, otomotif, dan berbagai aplikasi industri.</p></div></article></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><article class="product-card"><img src="assets/img/pelat baja.jpg" alt="Pelat baja PT Krakatau Posco"><div class="product-copy"><h4>Steel Plate</h4><p>Pelat baja berkualitas untuk aplikasi infrastruktur, pembuatan kapal, pipeline, pressure vessel, dan struktur umum.</p></div></article></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300"><article class="product-card"><img src="assets/img/produk baja.jpg" alt="Steel Slab PT Krakatau Posco"><div class="product-copy"><h4>Steel Slab</h4><p>Produk slab dengan tingkat impuritas rendah yang dihasilkan melalui pengendalian kualitas ketat.</p></div></article></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400"><article class="product-card"><img src="assets/img/baja lembaran.jpeg" alt="Baja lembaran PT Krakatau Posco"><div class="product-copy"><h4>Baja Lembaran</h4><p>Material baja lembaran untuk kebutuhan pengolahan lanjutan dan berbagai aplikasi pelanggan industri.</p></div></article></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500"><article class="product-card"><img src="assets/img/wire rod.jpg" alt="Produk baja industri PT Krakatau Posco"><div class="product-copy"><h4>Produk Baja Industri</h4><p>Ragam produk baja untuk mendukung sektor infrastruktur, manufaktur, energi, dan transportasi.</p></div></article></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600"><article class="product-card"><img src="assets/img/slab baja.jpg" alt="Fasilitas produksi PT Krakatau Posco"><div class="product-copy"><h4>Slab Baja</h4><p>produk baja setengah jadi (semi-finished product) berbentuk balok persegi panjang tebal yang dihasilkan dari proses pengecoran kontinu (continuous casting) di pabrik baja terintegrasi.</p></div></article></div>
+    </div></div>
+  </section>
+
+  <section id="lokasi" class="section section-soft">
+    <div class="container section-title" data-aos="fade-up"><h2>Kontak & Lokasi Kami</h2><p>Informasi Kontak dan Alamat Perusahaan</p></div>
+    <div class="container">
+      
+      <div class="row gy-4 mb-5">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="info-card contact-details">
+            <i class="bi bi-headset mb-3"></i>
+            <h4>General Inquiries</h4>
+            <p><i class="bi bi-telephone-fill me-2"></i> +62 254 369700</p>
+            <p><i class="bi bi-printer-fill me-2"></i> +62 254 369799 (Fax)</p>
+            <p><i class="bi bi-envelope-fill me-2"></i> info.ptkp@krakatauposco.co.id</p>
+            <p><i class="bi bi-geo-alt-fill me-2"></i> Jl. Afrika No.2, Cilegon, Banten 42443</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="info-card contact-details">
+            <i class="bi bi-briefcase mb-3"></i>
+            <h4>Sales Inquiries</h4>
+            <p><i class="bi bi-telephone-fill me-2"></i> +62 21 39506500</p>
+            <p><i class="bi bi-envelope-fill me-2"></i> sales.ptkp@krakatauposco.co.id</p>
+            <p><i class="bi bi-geo-alt-fill me-2"></i> Pacific Century Place 15th Floor SCBD Lot 10 Jl. Jendral Sudirman Kav.52-53 Jakarta 12190</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="info-card contact-details">
+            <i class="bi bi-shield-lock mb-3"></i>
+            <h4>Whistle Blowing System (WBS)</h4>
+            <p><i class="bi bi-envelope-fill me-2"></i> kpauditor1@krakatauposco.co.id</p>
+            <p><i class="bi bi-telephone-fill me-2"></i> +62 254 369700</p>
+            <p><i class="bi bi-geo-alt-fill me-2"></i> AUDIT OFFICE PT Krakatau Posco, Cilegon Works - Headquarter, Jl. Afrika No. 2 KIEC, Cilegon, Banten.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="info-card">
+            <i class="bi bi-geo-alt"></i><h4>Kantor & Pabrik</h4>
+            <p><strong>PT Krakatau Posco</strong><br>Kawasan pabrik baja terpadu di Cilegon, Banten</p>
+            <a class="btn-ks d-inline-block mt-2" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=PT+Krakatau+Posco+Cilegon">Buka Petunjuk Maps</a>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.9850815042746!2d105.9893341!3d-5.9967839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e41915352aea333%3A0x640154baba906657!2sPT.%20KRAKATAU%20POSCO!5e0!3m2!1sid!2sid!4v1793535197786!5m2!1sid!2sid" class="map-frame" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sosial" class="section">
+    <div class="container section-title" data-aos="fade-up"><h2>Ikuti Kami</h2><p>Sosial Media dan Informasi Perusahaan</p></div>
+    <div class="container"><div class="row gy-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100"><div class="social-card"><i class="bi bi-instagram"></i><h4>Instagram</h4><p>Ikuti informasi kegiatan, dokumentasi, dan kabar terbaru PT Krakatau Posco.</p><a href="https://www.instagram.com/krakatauposco/" target="_blank" rel="noopener">Kunjungi Instagram <i class="bi bi-arrow-up-right"></i></a></div></div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200"><div class="social-card"><i class="bi bi-linkedin"></i><h4>LinkedIn</h4><p>Temukan informasi profesional, aktivitas perusahaan, dan peluang karier PT Krakatau Posco.</p><a href="https://share.google/3UHImOQlICUrCYxQV" target="_blank" rel="noopener">Kunjungi LinkedIn <i class="bi bi-arrow-up-right"></i></a></div></div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300"><div class="social-card"><i class="bi bi-globe2"></i><h4>Website Resmi</h4><p>Sumber informasi resmi mengenai profil, sejarah, produk, berita, dan publikasi perusahaan.</p><a href="https://www.krakatauposco.co.id/?lang=id" target="_blank" rel="noopener">Kunjungi Website <i class="bi bi-arrow-up-right"></i></a></div></div>
+    </div></div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container py-4 text-center"><h5>PT Krakatau Posco</h5><p class="mb-1">Baja untuk Indonesia</p><small>Halaman profil perusahaan.</small><div class="mt-2"><a href="#hero">Kembali ke atas <i class="bi bi-arrow-up"></i></a></div></div>
+</footer>
+
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>AOS.init({duration:800,once:true, offset: 100});</script>
+
+<script>
+
+  let currentZoom = 1;
+  function zoomPage(zoomStep) {
+    currentZoom += zoomStep;
+    if (currentZoom < 0.5) currentZoom = 0.5;
+    if (currentZoom > 2.0) currentZoom = 2.0;
+    document.body.style.transform = `scale(${currentZoom})`;
+  }
+
+  function toggleLanguage() {
+    const btn = document.getElementById('langToggle');
+    if (btn.innerText === 'ID') {
+      btn.innerText = 'EN';
+    } else {
+      btn.innerText = 'ID';
+    }
+  }
+</script>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'id', includedLanguages: 'id,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+  function downloadPDF() {
+    const element = document.getElementById('struktur-lengkap');
+    
+    const opt = {
+      margin:       0.5,
+      filename:     'Struktur_Organisasi_Krakatau_Posco.pdf',
+      image:        { type: 'jpeg', quality: 0.98 },
+      html2canvas:  { scale: 2, useCORS: true, scrollY: 0 },
+      jsPDF:        { unit: 'in', format: 'letter', orientation: 'landscape' }
+    };
+
+    html2pdf().set(opt).from(element).save().catch(err => {
+      console.error("Gagal mengunduh PDF:", err);
+      alert("Terjadi kesalahan saat mengunduh PDF. Pastikan gambar sudah termuat sepenuhnya.");
+    });
+  }
+</script>
+
+</body>
+</html>
