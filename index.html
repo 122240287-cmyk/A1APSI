@@ -99,6 +99,9 @@
       object-fit: contain !important; 
       margin: 0 auto;
     }
+
+    .about .content p { text-align: justify; }
+    .product-card .product-copy p { text-align: justify; }
   </style>
 </head>
 <body class="index-page">
@@ -137,19 +140,16 @@
         <p class="animate__animated animate__fadeInDown text-uppercase fw-bold" style="letter-spacing:3px">Baja Indonesia, Kolaborasi Indonesia–Korea</p>
         <h2 class="animate__animated animate__fadeInDown">PT <span>KRAKATAU POSCO</span></h2>
         <p class="animate__animated animate__fadeInUp">Perusahaan patungan antara POSCO dan PT Krakatau Steel yang mengoperasikan pabrik baja terpadu di Cilegon, Banten.</p>
-        <a href="#tentang" class="btn-ks animate__animated animate__fadeInUp scrollto">Jelajahi Perusahaan</a>
       </div></div>
       <div class="carousel-item"><div class="carousel-container">
         <p class="animate__animated animate__fadeInDown text-uppercase fw-bold" style="letter-spacing:3px">Pabrik Baja Terpadu</p>
         <h2 class="animate__animated animate__fadeInDown">Teknologi <span>Blast Furnace</span></h2>
         <p class="animate__animated animate__fadeInUp">Krakatau Posco mengembangkan fasilitas baja terpadu dengan teknologi blast furnace dan kapasitas produksi sekitar 3 juta ton per tahun.</p>
-        <a href="#produk" class="btn-ks animate__animated animate__fadeInUp scrollto">Lihat Produk</a>
       </div></div>
       <div class="carousel-item"><div class="carousel-container">
         <p class="animate__animated animate__fadeInDown text-uppercase fw-bold" style="letter-spacing:3px">Berbasis di Cilegon</p>
         <h2 class="animate__animated animate__fadeInDown">Improvement · Execution · Grow Together</h2>
         <p class="animate__animated animate__fadeInUp">Kenali sejarah, organisasi, fasilitas, produk, dan lokasi PT Krakatau Posco melalui satu halaman informasi.</p>
-        <a href="#lokasi" class="btn-ks animate__animated animate__fadeInUp scrollto">Temukan Lokasi</a>
       </div></div>
       <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev" aria-label="Slide sebelumnya"><span class="carousel-control-prev-icon bi bi-chevron-left"></span></a>
       <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next" aria-label="Slide berikutnya"><span class="carousel-control-next-icon bi bi-chevron-right"></span></a>
@@ -205,15 +205,6 @@
         <div class="col-md" data-aos="fade-up" data-aos-delay="400"><div class="structure-card"><h6>Fungsi Pendukung</h6><strong>Finance · HR · Commercial · Safety</strong></div></div>
       </div>
       
-      <div class="text-center mb-4 mt-5" data-aos="fade-up">
-        <button onclick="downloadPDF()" class="btn-ks"><i class="bi bi-file-earmark-pdf"></i> Unduh Struktur (PDF)</button>
-      </div>
-
-      <div id="struktur-lengkap" class="org-chart-container mb-5 text-center" data-aos="zoom-in" data-aos-delay="200">
-        <h4 class="text-center mb-4" id="pdf-title" style="color: var(--ks-navy);">Struktur Grup Perusahaan Krakatau Steel</h4>
-        <img src="assets/img/Struktur Grup Perusahaan(6) krakatau steel.png" alt="Struktur Grup Perusahaan Krakatau Steel" class="img-fluid" style="max-width: 100%; height: auto; object-fit: contain;">
-      </div>
-
       <figure class="org-photo mb-4 mt-5" data-aos="fade-up">
         <div id="fasilitasCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -254,7 +245,7 @@
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
           <div class="info-card contact-details">
             <i class="bi bi-headset mb-3"></i>
-            <h4>General Inquiries</h4>
+            <h4>Pertanyaan Umum</h4>
             <p><i class="bi bi-telephone-fill me-2"></i> +62 254 369700</p>
             <p><i class="bi bi-printer-fill me-2"></i> +62 254 369799 (Fax)</p>
             <p><i class="bi bi-envelope-fill me-2"></i> info.ptkp@krakatauposco.co.id</p>
@@ -264,7 +255,7 @@
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
           <div class="info-card contact-details">
             <i class="bi bi-briefcase mb-3"></i>
-            <h4>Sales Inquiries</h4>
+            <h4>Pertanyaan Penjualan</h4>
             <p><i class="bi bi-telephone-fill me-2"></i> +62 21 39506500</p>
             <p><i class="bi bi-envelope-fill me-2"></i> sales.ptkp@krakatauposco.co.id</p>
             <p><i class="bi bi-geo-alt-fill me-2"></i> Pacific Century Place 15th Floor SCBD Lot 10 Jl. Jendral Sudirman Kav.52-53 Jakarta 12190</p>
@@ -273,7 +264,7 @@
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
           <div class="info-card contact-details">
             <i class="bi bi-shield-lock mb-3"></i>
-            <h4>Whistle Blowing System (WBS)</h4>
+            <h4> Sistem Penanganan Pengaduan</h4>
             <p><i class="bi bi-envelope-fill me-2"></i> kpauditor1@krakatauposco.co.id</p>
             <p><i class="bi bi-telephone-fill me-2"></i> +62 254 369700</p>
             <p><i class="bi bi-geo-alt-fill me-2"></i> AUDIT OFFICE PT Krakatau Posco, Cilegon Works - Headquarter, Jl. Afrika No. 2 KIEC, Cilegon, Banten.</p>
@@ -306,7 +297,7 @@
   </section>
 </main>
 <footer class="footer">
-  <div class="container py-4 text-center"><h5>PT Krakatau Posco</h5><p class="mb-1">Baja untuk Indonesia</p><small>Halaman profil perusahaan.</small><div class="mt-2"><a href="#hero">Kembali ke atas <i class="bi bi-arrow-up"></i></a></div></div>
+  <div class="container py-4 text-center"><h5 class="text-white">PT Krakatau Posco</h5><p class="mb-1">Baja untuk Indonesia</p><small>Halaman profil perusahaan.</small><div class="mt-2"><a href="#hero">Kembali ke atas <i class="bi bi-arrow-up"></i></a></div></div>
 </footer>
 
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -342,26 +333,6 @@ function googleTranslateElementInit() {
 }
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-<script>
-  function downloadPDF() {
-    const element = document.getElementById('struktur-lengkap');
-    
-    const opt = {
-      margin:       0.5,
-      filename:     'Struktur_Organisasi_Krakatau_Posco.pdf',
-      image:        { type: 'jpeg', quality: 0.98 },
-      html2canvas:  { scale: 2, useCORS: true, scrollY: 0 },
-      jsPDF:        { unit: 'in', format: 'letter', orientation: 'landscape' }
-    };
-
-    html2pdf().set(opt).from(element).save().catch(err => {
-      console.error("Gagal mengunduh PDF:", err);
-      alert("Terjadi kesalahan saat mengunduh PDF. Pastikan gambar sudah termuat sepenuhnya.");
-    });
-  }
-</script>
 
 </body>
 </html>
